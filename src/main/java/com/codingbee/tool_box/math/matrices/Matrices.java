@@ -4,6 +4,12 @@ import com.codingbee.tool_box.exceptions.IncorrectDataException;
 
 @SuppressWarnings("unused")
 public class Matrices {
+    /**
+     * Multiplies two given matrices and returns their product
+     * @param matrixA first matrix
+     * @param matrixB second matrix
+     * @return the product of the two matrices
+     */
     public static double[][] multiply(double[][] matrixA, double[][] matrixB){
         if (matrixA == null || matrixB == null){
             throw new IncorrectDataException("The passed matrices can not be null");
@@ -28,6 +34,12 @@ public class Matrices {
         return matrixC;
     }
 
+    /**
+     * Adds two given matrices and returns their sum
+     * @param matrixA first matrix
+     * @param matrixB second matrix
+     * @return the sum of the two matrices
+     */
     public static double[][] add(double[][] matrixA, double[][] matrixB){
         if (matrixA == null || matrixB == null){
             throw new IncorrectDataException("The passed matrices can not be null");
@@ -55,6 +67,12 @@ public class Matrices {
         return  matrixC;
     }
 
+    /**
+     * Subtracts two given matrices and returns their difference
+     * @param matrixA first matrix
+     * @param matrixB second matrix
+     * @return the difference of the two matrices
+     */
     public static double[][] subtract(double[][] matrixA, double[][] matrixB){
         if (matrixA == null || matrixB == null){
             throw new IncorrectDataException("The passed matrices can not be null");

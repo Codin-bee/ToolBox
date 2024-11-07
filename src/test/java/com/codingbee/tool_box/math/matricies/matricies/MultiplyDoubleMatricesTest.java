@@ -140,7 +140,6 @@ public class MultiplyDoubleMatricesTest {
 
 
     //Edge case: irregular matrix
-
     @Test
     public void multiplyTest13(){
         double[][] matrix1 = new double[][]{{3, 2, 4}, {7, 0}};

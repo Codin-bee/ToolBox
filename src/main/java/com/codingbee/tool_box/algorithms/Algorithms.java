@@ -27,6 +27,23 @@ public class Algorithms {
         return indexWithHighestNo;
     }
 
+    /**
+     * Applies the softmax function to given array in-place instead of returning new one
+     * @param values values to apply the softmax to
+     * @param temp temperature variable, part of the formula
+     */
+    public static void softmaxInPlace(double[] values, double temp){
+        double sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            values[i] = Math.exp(values[i] / temp);
+            sum += values[i];
+        }
+        for (int i = 0; i < values.length; i++) {
+            values[i] /= sum;
+        }
+    }
+
+
     //Int
     /**
      * Simple method used to find the element with the highest value.
@@ -49,6 +66,23 @@ public class Algorithms {
         }
         return indexWithHighestNo;
     }
+
+    /**
+     * Applies the softmax function to given array in-place instead of returning new one
+     * @param values values to apply the softmax to
+     * @param temp temperature variable, part of the formula
+     */
+    public static void softmaxInPlace(int[] values, int temp){
+        int sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            values[i] = (int) Math.exp((double) values[i] / temp);
+            sum += values[i];
+        }
+        for (int i = 0; i < values.length; i++) {
+            values[i] /= sum;
+        }
+    }
+
 
     //Float
     /**
@@ -73,6 +107,23 @@ public class Algorithms {
         return indexWithHighestNo;
     }
 
+    /**
+     * Applies the softmax function to given array in-place instead of returning new one
+     * @param values values to apply the softmax to
+     * @param temp temperature variable, part of the formula
+     */
+    public static void softmaxInPlace(float[] values, float temp){
+        float sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            values[i] = (float) Math.exp(values[i] / temp);
+            sum += values[i];
+        }
+        for (int i = 0; i < values.length; i++) {
+            values[i] /= sum;
+        }
+    }
+
+
     //Long
     /**
      * Simple method used to find the element with the highest value.
@@ -96,6 +147,23 @@ public class Algorithms {
         return indexWithHighestNo;
     }
 
+    /**
+     * Applies the softmax function to given array in-place instead of returning new one
+     * @param values values to apply the softmax to
+     * @param temp temperature variable, part of the formula
+     */
+    public static void softmaxInPlace(long[] values, long temp){
+        long sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            values[i] = (long) Math.exp((double) values[i] / temp);
+            sum += values[i];
+        }
+        for (int i = 0; i < values.length; i++) {
+            values[i] /= sum;
+        }
+    }
+
+
     //Short
     /**
      * Simple method used to find the element with the highest value.
@@ -117,5 +185,21 @@ public class Algorithms {
             }
         }
         return indexWithHighestNo;
+    }
+
+    /**
+     * Applies the softmax function to given array in-place instead of returning new one
+     * @param values values to apply the softmax to
+     * @param temp temperature variable, part of the formula
+     */
+    public static void softmaxInPlace(short[] values, short temp){
+        short sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            values[i] = (short) Math.exp((double) values[i] / temp);
+            sum += values[i];
+        }
+        for (int i = 0; i < values.length; i++) {
+            values[i] /= sum;
+        }
     }
 }

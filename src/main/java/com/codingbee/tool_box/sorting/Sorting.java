@@ -19,21 +19,7 @@ public class Sorting {
             throw new IncorrectDataException("The array to sort can not be a null pointer");
         }
         double[] sorted = Arrays.copyOf(original, original.length);
-
-        for (int i = 0; i < sorted.length - 1; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < sorted.length; j++) {
-                if (sorted[j] < sorted[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            double temp = sorted[i];
-            sorted[i] = sorted[minIndex];
-            sorted[minIndex] = temp;
-
-        }
+        Sorting.selectionSortInPlace(sorted);
         return sorted;
     }
 
@@ -75,21 +61,7 @@ public class Sorting {
             throw new IncorrectDataException("The array to sort can not be a null pointer");
         }
         int[] sorted = Arrays.copyOf(original, original.length);
-
-        for (int i = 0; i < sorted.length - 1; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < sorted.length; j++) {
-                if (sorted[j] < sorted[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            int temp = sorted[i];
-            sorted[i] = sorted[minIndex];
-            sorted[minIndex] = temp;
-
-        }
+        Sorting.selectionSortInPlace(sorted);
         return sorted;
     }
 
@@ -131,21 +103,7 @@ public class Sorting {
             throw new IncorrectDataException("The array to sort can not be a null pointer");
         }
         float[] sorted = Arrays.copyOf(original, original.length);
-
-        for (int i = 0; i < sorted.length - 1; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < sorted.length; j++) {
-                if (sorted[j] < sorted[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            float temp = sorted[i];
-            sorted[i] = sorted[minIndex];
-            sorted[minIndex] = temp;
-
-        }
+        Sorting.selectionSortInPlace(sorted);
         return sorted;
     }
 
@@ -187,21 +145,7 @@ public class Sorting {
             throw new IncorrectDataException("The array to sort can not be a null pointer");
         }
         long[] sorted = Arrays.copyOf(original, original.length);
-
-        for (int i = 0; i < sorted.length - 1; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < sorted.length; j++) {
-                if (sorted[j] < sorted[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            long temp = sorted[i];
-            sorted[i] = sorted[minIndex];
-            sorted[minIndex] = temp;
-
-        }
+        Sorting.selectionSortInPlace(sorted);
         return sorted;
     }
 
@@ -243,21 +187,7 @@ public class Sorting {
             throw new IncorrectDataException("The array to sort can not be a null pointer");
         }
         short[] sorted = Arrays.copyOf(original, original.length);
-
-        for (int i = 0; i < sorted.length - 1; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < sorted.length; j++) {
-                if (sorted[j] < sorted[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            short temp = sorted[i];
-            sorted[i] = sorted[minIndex];
-            sorted[minIndex] = temp;
-
-        }
+        Sorting.selectionSortInPlace(sorted);
         return sorted;
     }
 
@@ -299,21 +229,7 @@ public class Sorting {
             throw new IncorrectDataException("The array to sort can not be a null pointer");
         }
         byte[] sorted = Arrays.copyOf(original, original.length);
-
-        for (int i = 0; i < sorted.length - 1; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < sorted.length; j++) {
-                if (sorted[j] < sorted[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            byte temp = sorted[i];
-            sorted[i] = sorted[minIndex];
-            sorted[minIndex] = temp;
-
-        }
+        Sorting.selectionSortInPlace(sorted);
         return sorted;
     }
 

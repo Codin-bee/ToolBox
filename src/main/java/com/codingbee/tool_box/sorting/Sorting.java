@@ -8,11 +8,11 @@ import java.util.Arrays;
 public class Sorting {
     //region Double
     /**
-     * Sorts given array using selection sort and returns the sorted version.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array using selection sort and returns the sorted version.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
      * with the additional O(n) space required for the output array.
      * @param original the array to sort
-     * @return sorted array
+     * @return the array with sorted values
      */
     public static double[] selectionSort(double[] original) {
         if (original == null){
@@ -24,8 +24,8 @@ public class Sorting {
     }
 
     /**
-     * Sorts given array in-place selection sort.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array in-place using selection sort.
+     * This algorithm has time complexity O(n^2) and space complexity O(1).
      * @param array the array to sort
      */
     public static void selectionSortInPlace(double[] array){
@@ -47,6 +47,11 @@ public class Sorting {
         }
     }
 
+    /**
+     * Sorts the given array in-place using bubble sort.
+     * This algorithm has time complexity O(n^2) and space complexity O(1).
+     * @param array the array to sort
+     */
     public static void bubbleSortInPlace(double[] array) {
         if (array == null){
             throw new IncorrectDataException("The array to sort can not be a null pointer");
@@ -67,6 +72,14 @@ public class Sorting {
         }
     }
 
+
+    /**
+     * Sorts the given array using bubble sort and returns the array containing sorted values.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
+     * with the additional
+     * @param original the array to sort
+     * @return the array with sorted values
+     */
     public static double[] bubbleSort(double[] original){
         if (original == null){
             throw new IncorrectDataException("The array to sort can not be a null pointer");
@@ -80,11 +93,11 @@ public class Sorting {
 
     //region Int
     /**
-     * Sorts given array using selection sort and returns the sorted version.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array using selection sort and returns the sorted version.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
      * with the additional O(n) space required for the output array.
      * @param original the array to sort
-     * @return sorted array
+     * @return the array with sorted values
      */
     public static int[] selectionSort(int[] original) {
         if (original == null){
@@ -96,8 +109,8 @@ public class Sorting {
     }
 
     /**
-     * Sorts given array in-place selection sort.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array in-place using selection sort.
+     * This algorithm has time complexity O(n^2) and space complexity O(1).
      * @param array the array to sort
      */
     public static void selectionSortInPlace(int[] array){
@@ -122,11 +135,11 @@ public class Sorting {
 
     //region Float
     /**
-     * Sorts given array using selection sort and returns the sorted version.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array using selection sort and returns the sorted version.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
      * with the additional O(n) space required for the output array.
      * @param original the array to sort
-     * @return sorted array
+     * @return the array with sorted values
      */
     public static float[] selectionSort(float[] original) {
         if (original == null){
@@ -138,8 +151,8 @@ public class Sorting {
     }
 
     /**
-     * Sorts given array in-place selection sort.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array in-place using selection sort.
+     * This algorithm has time complexity O(n^2) and space complexity O(1).
      * @param array the array to sort
      */
     public static void selectionSortInPlace(float[] array){
@@ -164,11 +177,11 @@ public class Sorting {
 
     //region Long
     /**
-     * Sorts given array using selection sort and returns the sorted version.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array using selection sort and returns the sorted version.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
      * with the additional O(n) space required for the output array.
      * @param original the array to sort
-     * @return sorted array
+     * @return the array with sorted values
      */
     public static long[] selectionSort(long[] original) {
         if (original == null){
@@ -206,11 +219,11 @@ public class Sorting {
 
     //region Short
     /**
-     * Sorts given array using selection sort and returns the sorted version.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array using selection sort and returns the sorted version.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
      * with the additional O(n) space required for the output array.
      * @param original the array to sort
-     * @return sorted array
+     * @return the array with sorted values
      */
     public static short[] selectionSort(short[] original) {
         if (original == null){
@@ -248,11 +261,11 @@ public class Sorting {
 
     //region Byte
     /**
-     * Sorts given array using selection sort and returns the sorted version.
-     * This algorithm has time complexity O(n^2) and space complexity O(1)
+     * Sorts the given array using selection sort and returns the sorted version.
+     * This algorithm has time complexity O(n^2) and space complexity O(1),
      * with the additional O(n) space required for the output array.
      * @param original the array to sort
-     * @return sorted array
+     * @return the array with sorted values
      */
     public static byte[] selectionSort(byte[] original) {
         if (original == null){

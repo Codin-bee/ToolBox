@@ -1,4 +1,4 @@
-package com.codingbee.tool_box.sorting.sorting;
+package com.codingbee.tool_box.sorting.sorting.selection_sort;
 
 import com.codingbee.tool_box.exceptions.IncorrectDataException;
 import com.codingbee.tool_box.sorting.Sorting;

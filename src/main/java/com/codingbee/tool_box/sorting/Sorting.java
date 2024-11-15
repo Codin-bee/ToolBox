@@ -46,6 +46,36 @@ public class Sorting {
             array[minIndex] = temp;
         }
     }
+
+    public static void bubbleSortInPlace(double[] array) {
+        if (array == null){
+            throw new IncorrectDataException("The array to sort can not be a null pointer");
+        }
+        boolean swapped;
+        double temp;
+        for (int i = 0; i < array.length - 1; i++) {
+            swapped = false;
+            for (int j = 0; j < array.length - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                    swapped = true;
+                }
+            }
+            if (!swapped) break;
+        }
+    }
+
+    public static double[] bubbleSort(double[] original){
+        if (original == null){
+            throw new IncorrectDataException("The array to sort can not be a null pointer");
+        }
+        double[] sorted = Arrays.copyOf(original, original.length);
+        Sorting.bubbleSortInPlace(sorted);
+        return sorted;
+    }
+
     //endregion Double
 
     //region Int

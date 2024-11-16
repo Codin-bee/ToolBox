@@ -68,19 +68,21 @@ public class SelectionSortFloatTest {
     }
 
 
-    // Edge case: null pointer passed
+    //Edge case: empty array passed
     @Test
     public void selectionSortTest7() {
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSort((float[]) null));
+        float[] unsorted = {};
+        float[] received = Sorting.selectionSort(unsorted);
+
+        float[] expected = {};
+
+        Assertions.assertArrayEquals(expected, received);
     }
 
+
+    // Edge case: null pointer passed
     @Test
     public void selectionSortTest8() {
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSort((float[]) null));
-    }
-
-    @Test
-    public void selectionSortTest9() {
         Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSort((float[]) null));
     }
 }

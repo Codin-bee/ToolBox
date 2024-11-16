@@ -61,19 +61,21 @@ public class SelectionSortInPlaceShortTest {
         Assertions.assertArrayEquals(expected, received);
     }
 
+
+    //Edge case: empty array passed
+    @Test
+    public void selectionSortTest7(){
+        short[] received = {};
+        Sorting.selectionSortInPlace(received);
+        short[] expected = {};
+
+        Assertions.assertArrayEquals(expected, received);
+    }
+
+
     // Edge case: null pointer passed
     @Test
-    public void selectionSortTest7() {
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSortInPlace((short[]) null));
-    }
-
-    @Test
     public void selectionSortTest8() {
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSortInPlace((short[]) null));
-    }
-
-    @Test
-    public void selectionSortTest9() {
         Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSortInPlace((short[]) null));
     }
 }

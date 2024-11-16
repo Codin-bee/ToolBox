@@ -61,19 +61,21 @@ public class SelectionSortInPlaceFloatTest {
         Assertions.assertArrayEquals(expected, received);
     }
 
-    // Edge case: null pointer passed
+
+    //Edge case: empty array passed
     @Test
     public void selectionSortTest7() {
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSortInPlace((float[]) null));
+        float[] received = {};
+        Sorting.selectionSortInPlace(received);
+        float[] expected = {};
+
+        Assertions.assertArrayEquals(expected, received);
     }
 
+
+    // Edge case: null pointer passed
     @Test
     public void selectionSortTest8() {
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSortInPlace((float[]) null));
-    }
-
-    @Test
-    public void selectionSortTest9() {
         Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSortInPlace((float[]) null));
     }
 }

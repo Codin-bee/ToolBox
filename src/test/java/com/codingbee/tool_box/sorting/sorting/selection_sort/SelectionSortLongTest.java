@@ -68,19 +68,21 @@ public class SelectionSortLongTest {
     }
 
 
+    //Edge case: empty array passed
+    @Test
+    public void selectionSortTest7() {
+        long[] unsorted = {};
+        long[] received = Sorting.selectionSort(unsorted);
+
+        long[] expected = {};
+
+        Assertions.assertArrayEquals(expected, received);
+    }
+
+
     //Edge case: null pointer passed
     @Test
-    public void selectionSortTest7(){
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSort((long[]) null));
-    }
-
-    @Test
     public void selectionSortTest8(){
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSort((long[]) null));
-    }
-
-    @Test
-    public void selectionSortTest9(){
         Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.selectionSort((long[]) null));
     }
 }

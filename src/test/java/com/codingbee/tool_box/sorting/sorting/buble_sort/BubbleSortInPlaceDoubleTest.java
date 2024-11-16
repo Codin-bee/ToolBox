@@ -62,19 +62,20 @@ public class BubbleSortInPlaceDoubleTest {
     }
 
 
-    //Edge case: null pointer passed
+    //Edge case: empty array passed
     @Test
     public void selectionSortTest7(){
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.bubbleSortInPlace((double[])  null));
+        double[] received ={};
+        Sorting.bubbleSortInPlace(received);
+        double[] expected = {};
+
+        Assertions.assertArrayEquals(expected, received);
     }
 
+
+    //Edge case: null pointer passed
     @Test
     public void selectionSortTest8(){
-        Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.bubbleSortInPlace((double[])  null));
-    }
-
-    @Test
-    public void selectionSortTest9(){
         Assertions.assertThrows(IncorrectDataException.class, () -> Sorting.bubbleSortInPlace((double[])  null));
     }
 }

@@ -87,6 +87,20 @@ public class Sorting {
             if (!swapped) break;
         }
     }
+
+    /**
+     * Checks the array in order to see if it is sorted or not.
+     * @param array the array to check
+     * @return true if the array is sorted, false otherwise
+     */
+    public static boolean isSorted(double[] array){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i-1] > array[i]){
+                return false;
+            }
+        }
+        return true;
+    }
     //endregion Double
 
     //region Int

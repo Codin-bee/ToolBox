@@ -1,5 +1,6 @@
 package com.codingbee.tool_box.math.vectors;
 
+import com.codingbee.tool_box.algorithms.Algorithms;
 import com.codingbee.tool_box.exceptions.IncorrectDataException;
 
 @SuppressWarnings("unused")
@@ -84,5 +85,69 @@ public class Vectors {
             vectorC[i] = vectorA[i] / vectorB[i];
         }
         return vectorC;
+    }
+
+    /**
+     * Sums all elements of the given array.
+     * @param array the array to sum
+     * @return the sum of all the elements in the given array
+     */
+    public static double sumElements(double[] array){
+        if (array == null){
+            throw new IncorrectDataException("The array can not be null pointer");
+        }
+        double sum = 0;
+        for (double element : array) {
+            sum += element;
+        }
+        return sum;
+    }
+
+    /**
+     * Finds the highest value in the array
+     * @param array array to search
+     * @return the highest value in the given array
+     */
+    public static double findMax(double[] array){
+        if (array == null){
+            throw new IncorrectDataException("The array can not be null pointer");
+        }
+        double max = array[0];
+        for (double element : array) {
+            if (element > max) {
+                max = element;
+            }
+        }
+        return max;
+    }
+
+    /**
+     * Finds the lowest value in the given array
+     * @param array the array to search
+     * @return the lowest value in the given array
+     */
+    public static double findMin(double[] array){
+        if (array == null){
+            throw new IncorrectDataException("The array can not be null pointer");
+        }
+        double min = array[0];
+        for (double element : array) {
+            if (element < min) {
+                min = element;
+            }
+        }
+        return min;
+    }
+
+    /**
+     * Calculates the average value of all the array elements
+     * @param array the array to calculate average from
+     * @return the average value of all the array elements
+     */
+    public static double calculateAverage(double[] array){
+        if (array == null){
+            throw new IncorrectDataException("The array can not be null pointer");
+        }
+        return Algorithms.sumElements(array) / array.length;
     }
 }

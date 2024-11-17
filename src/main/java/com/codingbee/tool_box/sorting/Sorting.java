@@ -172,6 +172,18 @@ public class Sorting {
             if (!swapped) break;
         }
     }
+
+    /**
+     * This method works exactly as: {@link #isSorted(double[])}
+     */
+    public static boolean isSorted(int[] array){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i-1] > array[i]){
+                return false;
+            }
+        }
+        return true;
+    }
     //endregion Int
 
     //region Float
@@ -242,6 +254,18 @@ public class Sorting {
             }
             if (!swapped) break;
         }
+    }
+
+    /**
+     * This method works exactly as: {@link #isSorted(double[])}
+     */
+    public static boolean isSorted(float[] array){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i-1] > array[i]){
+                return false;
+            }
+        }
+        return true;
     }
     //endregion Float
 
@@ -314,6 +338,18 @@ public class Sorting {
             if (!swapped) break;
         }
     }
+
+    /**
+     * This method works exactly as: {@link #isSorted(double[])}
+     */
+    public static boolean isSorted(long[] array){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i-1] > array[i]){
+                return false;
+            }
+        }
+        return true;
+    }
     //endregion Long
 
     //region Short
@@ -385,6 +421,18 @@ public class Sorting {
             if (!swapped) break;
         }
     }
+
+    /**
+     * This method works exactly as: {@link #isSorted(double[])}
+     */
+    public static boolean isSorted(short[] array){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i-1] > array[i]){
+                return false;
+            }
+        }
+        return true;
+    }
     //endregion Short
 
     //region Byte
@@ -455,6 +503,18 @@ public class Sorting {
             }
             if (!swapped) break;
         }
+    }
+
+    /**
+     * This method works exactly as: {@link #isSorted(double[])}
+     */
+    public static boolean isSorted(byte[] array){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i-1] > array[i]){
+                return false;
+            }
+        }
+        return true;
     }
     //endregion Short
 
